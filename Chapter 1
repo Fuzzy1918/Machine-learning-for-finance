@@ -26,3 +26,5 @@ print(corr)
 # Scatter the current 5-day percent change vs the future 5-day percent change
 plt.scatter(lng_df['5d_close_pct'], lng_df['5d_future_close'])
 plt.show()
+
+#Data transforms, features, and targets

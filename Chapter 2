@@ -36,3 +36,7 @@ plt.yticks(rotation=0)  # ensure y-axis ticklabels are horizontal
 plt.xticks(rotation=90)  # ensure x-axis ticklabels are vertical
 plt.tight_layout()
 plt.show()
+
+#Decision trees
+
+

@@ -62,3 +62,10 @@ model_1.add(Dense(1, activation='linear'))
 # Fit the model
 model_1.compile(optimizer='adam', loss='mse')
 history = model_1.fit(scaled_train_features, train_targets, epochs=25)
+
+# Plot the losses from the fit
+plt.plot(history.history['loss'])
+
+# Use the last loss as the title
+plt.title('loss:' + str(round(history.history['loss'][-1], 6)))
+plt.show()

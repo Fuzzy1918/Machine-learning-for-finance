@@ -83,3 +83,7 @@ plt.scatter(train_preds, train_targets, label='train')
 plt.scatter(test_preds, test_targets, label = 'test')
 plt.legend()
 plt.show()
+
+#custom loss functions
+
+

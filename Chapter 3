@@ -159,3 +159,14 @@ test_pred3 = model_3.predict(scaled_test_features)
 train_preds = np.mean(np.hstack((train_pred1, train_pred2, train_pred3)), axis=1)
 test_preds = np.mean(np.hstack((test_pred1, test_pred2, test_pred3)), axis = 1)
 print(test_preds[-5:])
+
+from sklearn.metrics import r2_score
+
+# Evaluate the R^2 scores
+print(r2_score(train_targets, train_preds))
+print(r2_score(test_targets, test_preds))
+
+# Scatter the predictions vs actual -- this one is interesting!
+plt.scatter(train_preds, train_targets, label = 'train')
+plt.scatter(test_preds, test_targets, label='test')
+plt.legend(); plt.show()

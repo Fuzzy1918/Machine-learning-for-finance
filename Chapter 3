@@ -125,3 +125,7 @@ print(r2_score(test_targets, test_preds))
 plt.scatter(train_preds, train_targets, label='train')
 plt.scatter(test_preds, test_targets, label='test')  # plot test set
 plt.legend(); plt.show()
+
+#Overfitting and ensembling
+
+

@@ -50,3 +50,6 @@ plt.scatter(x=portfolio_volatility[date], y=portfolio_returns[date], alpha=0.1)
 plt.xlabel('Volatility')
 plt.ylabel('Returns')
 plt.show()
+
+#Sharpe ratios; features and targets
+

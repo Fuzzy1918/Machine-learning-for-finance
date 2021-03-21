@@ -107,3 +107,6 @@ plt.scatter(x=cur_volatility[best_idx], y=cur_returns[best_idx], marker='x', col
 plt.xlabel('Volatility')
 plt.ylabel('Returns')
 plt.show()
+
+#Machine learning for MPT
+

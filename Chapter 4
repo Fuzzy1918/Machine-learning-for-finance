@@ -150,3 +150,9 @@ for r in returns_monthly['SPY'].iloc[train_size:]:
 
 print('algo returns:', (algo_cash[-1] - algo_cash[0]) / algo_cash[0])
 print('SPY returns:', (spy_cash[-1] - spy_cash[0]) / spy_cash[0])
+
+# Plot the algo_cash and spy_cash to compare overall returns
+plt.plot(algo_cash, label ='algo')
+plt.plot(spy_cash, label='SPY')
+plt.legend()  # show the legend
+plt.show()

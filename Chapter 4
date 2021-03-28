@@ -1,5 +1,5 @@
 #Modern portfolio theory (MPT); efficient frontiers
-
+#nice
 # Join 3 stock DataFrame together
 full_df = pd.concat([lng_df, spy_df, smlv_df], axis=1).dropna()
 
